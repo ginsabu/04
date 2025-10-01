@@ -5,19 +5,16 @@
 
 int main(int argc, char *argv[]) {
 	
-	int x, y, z, m;
-	int a, b, c;
+	int min;
+	int sec;
 	
-	x = 2;
-	z = 1;
-	a = 3;
-	b = 4;
-	c = 5;
+	printf("Input the second: ");
+	scanf("%d", &sec);
 	
-	y = a*x^2 + b*x +c;
-	m = (x + y + z) / 3;
+	min = sec / 60;
+	sec = sec % 60;
 	
-	printf("y = %d, m = %d", y, m);
+	printf("The time is %d : %d", min, sec);
 	
 	return 0;
 }
