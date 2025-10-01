@@ -5,16 +5,12 @@
 
 int main(int argc, char *argv[]) {
 	
-	int min;
-	int sec;
+	int year;
 	
-	printf("Input the second: ");
-	scanf("%d", &sec);
+	printf("Input the year: ");
+	scanf("%d", &year);
 	
-	min = sec / 60;
-	sec = sec % 60;
+	printf("Is the year %d the leap year?: %d", year,
+	(year % 400 == 0) || (year % 4 == 0 && year % 100 != 0));
 	
-	printf("The time is %d : %d", min, sec);
-	
-	return 0;
 }
